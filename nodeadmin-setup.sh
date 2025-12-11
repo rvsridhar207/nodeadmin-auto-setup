@@ -13,7 +13,7 @@ sudo chown -R nodeadmin:nodeadmin /home/nodeadmin/.ssh
 echo "Set a local password for nodeadmin (used only for sudo):"
 sudo passwd nodeadmin
 
-echo "Paste public SSH key for nodeadmin, then press Ctrl+D:"
+echo "Paste public SSH key for nodeadmin, press Enter, and then press Ctrl+D:"
 sudo tee /home/nodeadmin/.ssh/authorized_keys >/dev/null
 sudo chown nodeadmin:nodeadmin /home/nodeadmin/.ssh/authorized_keys
 
